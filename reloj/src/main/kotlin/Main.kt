@@ -9,6 +9,7 @@ fun main(){
     casio.menu(Hora())
     var enero1 =Dia(20,10,'s')
     var enero2 =Dia(enero1)
+    var enero3 =Dia(22,12,'s')
     enero1.mostrar_prediccion()
     enero2.mostrar_prediccion()
     enero1.setMax()
@@ -16,5 +17,7 @@ fun main(){
     enero1.setEstado()
     enero1.mostrar_prediccion()
     enero2.mostrar_prediccion()
+    val lanzarPrediccion= Ejecutar()
+    lanzarPrediccion.main()
 
 }

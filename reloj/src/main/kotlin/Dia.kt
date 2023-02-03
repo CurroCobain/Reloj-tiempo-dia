@@ -1,6 +1,26 @@
 class Dia() {
     var max: Int = 0
+        get():Int{
+            return field
+        }
+        set(valor:Int){
+            if (valor < 60){
+                field=valor
+            }else{
+                println("Vamos a morir todos!!")
+            }
+        }
     var min: Int = 0
+        get():Int{
+            return field
+        }
+        set(valor:Int){
+            if (valor > -50){
+                field=valor
+            }else{
+                println("hace más frío que en la comunión de Pingu")
+            }
+        }
     var estado: Char = 'x'
         get():Char{
             return field
@@ -57,7 +77,7 @@ class Dia() {
             'n'-> estadoMostrar="nublado"
             'l'-> estadoMostrar="lluvioso"
         }
-        println(" Hoy habrá una temperatura máxima de $max+º, mínima de $min+º  y se espera un día $estadoMostrar")
+        println(" Hoy habrá una temperatura máxima de $max º, mínima de $min º  y se espera un día $estadoMostrar")
     }
 
 
